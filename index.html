@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eqra Fatima – Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ✅ Google Font (optional for modern look) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ✅ Navbar with responsive toggle -->
+    <header class="navbar">
+        <div class="logo">Eqra Fatima</div>
+        <nav class="nav-links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#volunteer">Volunteer</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <!-- ✅ Hamburger icon -->
+        <div class="hamburger" id="hamburger">&#9776;</div>
+    </header>
+
+    <!-- ✅ Hero Section -->
+    <section id="hero">
+        <img src="main.jpeg" alt="Eqra Fatima">
+        <h1>Hi, I'm Eqra Fatima</h1>
+        <p>Second-year Mechanical Engineering student at MNNIT</p>
+    </section>
+
+    <!-- ✅ About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm passionate about technology and design, with a strong foundation in engineering principles.</p>
+        <p>Active participant in the Arts Committee and member of the Kabaddi team at MNNIT.</p>
+    </section>
+
+    <!-- ✅ Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python</li>
+            <li>Machine Learning (Basics)</li>
+        </ul>
+    </section>
+
+    <!-- ✅ Projects Section -->
+    <section id="projects">
+        <h2>Sample Projects</h2>
+        <div class="project">
+            <img src="p1.jpeg" alt="Project 1">
+            <p>Personal Portfolio Website</p>
+        </div>
+        <div class="project">
+            <img src="p2.jpeg" alt="Project 2">
+            <p>Basic ML Model with Python</p>
+        </div>
+    </section>
+
+    <!-- ✅ Volunteer Section -->
+    <section id="volunteer">
+        <h2>Volunteer Experience</h2>
+        <p>Core Member of the Green Club at MNNIT</p>
+        <p>Member of the Kabaddi Team at MNNIT</p>
+    </section>
+
+    <!-- ✅ Footer with anchor links -->
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:eqra@example.com">eqra@example.com</a></p>
+        <p>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/yourprofile" target="_blank">GitHub</a> |
+            <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+        </p>
+    </footer>
+
+    <!-- ✅ Toggle Script for mobile navbar -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
